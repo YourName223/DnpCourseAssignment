@@ -1,0 +1,6 @@
+C:\Users\OHN\Projects\server\InMemoryRepository\obj\Debug\net10.0\InMemoryRepository.csproj.AssemblyReference.cache
+C:\Users\OHN\Projects\server\InMemoryRepository\obj\Debug\net10.0\InMemoryRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OHN\Projects\server\InMemoryRepository\obj\Debug\net10.0\InMemoryRepository.AssemblyInfoInputs.cache
+C:\Users\OHN\Projects\server\InMemoryRepository\obj\Debug\net10.0\InMemoryRepository.AssemblyInfo.cs
+C:\Users\OHN\Projects\server\InMemoryRepository\obj\Debug\net10.0\InMemoryRepository.csproj.CoreCompileInputs.cache
+C:\Users\OHN\Projects\server\InMemoryRepository\obj\Debug\net10.0\InMemoryRepository.sourcelink.json
