@@ -3,17 +3,38 @@ using RepositoryContracts;
 
 namespace InMemoryRepository;
 
-public class CommentInMemoryRepository : IPostRepository
+public class CommentInMemoryRepository : ICommentRepository
 {
-    private List<Comment> comments{get; set;}
-
-    Task<Comment> AddAsync(Comment comment)
+    private List<Comment> comments = [];
+    public CommentInMemoryRepository()
     {
-        comments.Id = comments.Any<>?comments.Max(p=>p.id)+1:0;
-        comments.Add(comment);
-        return Task.FromResult<>;
+        //Dummy data
+        AddAsync(new Comment()
+        {
+            Body="This is a comment",
+            PostId = 0,
+            UserId = 0
+        });
+        AddAsync(new Comment()
+        {
+            Body="This is another comment",
+            PostId = 1,
+            UserId = 1
+        });
+        AddAsync(new Comment()
+        {
+            Body="This is a alot of comments",
+            PostId = 0,
+            UserId = 1
+        });
     }
-    Task UpdateAsync(Comment comment)
+    public Task<Comment> AddAsync(Comment comment)
+    {
+        comment.Id = comments.Any()?comments.Max(p=>p.Id)+1:0;
+        comments.Add(comment);
+        return Task.FromResult(comment);
+    }
+    public Task UpdateAsync(Comment comment)
     {
         Comment? existingComment = comments.SingleOrDefault(p => p.Id == comment.Id); 
         
@@ -26,21 +47,21 @@ public class CommentInMemoryRepository : IPostRepository
         comments.Add(existingComment); 
         return Task.CompletedTask;
     }
-    Task DeleteAsync(Comment comment)
+    public Task DeleteAsync(Comment comment)
     {
-        Comment? commentToRemove = comments.SingleOrDefault(p => p.Id == id); 
+        Comment? commentToRemove = comments.SingleOrDefault(p => p.Id == comment.Id); 
 
-        if (postToRemove is null) 
+        if (commentToRemove is null) 
         { 
-            throw new InvalidOperationException( $"Comment with ID '{id}' not found"); 
+            throw new InvalidOperationException( $"Comment with ID '{comment.Id}' not found"); 
         } 
         
         comments.Remove(commentToRemove); 
         return Task.CompletedTask;
     }
-    Task<Comment> GetSingleAsync(int id)
+    public Task<Comment> GetSingleAsync(int id)
     {
-        Comment? comment = comments.SingleOrDefault(p => p.id == id);
+        Comment? comment = comments.SingleOrDefault(p => p.Id == id);
 
         if (comment is null) 
         { 
@@ -49,7 +70,7 @@ public class CommentInMemoryRepository : IPostRepository
 
         return Task.FromResult(comment);
     }
-    IQueryable<Comment> GetManyAsync()
+    public IQueryable<Comment> GetManyAsync()
     {
         return comments.AsQueryable();
     }

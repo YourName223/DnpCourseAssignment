@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\OHN\\Projects\\server\\Entities\\Entities.csproj": {}
+    "C:\\Users\\OHN\\Projects\\Server\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\OHN\\Projects\\server\\Entities\\Entities.csproj": {
+    "C:\\Users\\OHN\\Projects\\Server\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OHN\\Projects\\server\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\OHN\\Projects\\Server\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\OHN\\Projects\\server\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\OHN\\Projects\\Server\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\OHN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OHN\\Projects\\server\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\OHN\\Projects\\Server\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OHN\\AppData\\Roaming\\NuGet\\NuGet.Config",

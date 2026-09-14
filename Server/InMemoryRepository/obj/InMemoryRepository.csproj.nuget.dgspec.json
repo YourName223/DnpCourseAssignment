@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\OHN\\Projects\\server\\InMemoryRepository\\InMemoryRepository.csproj": {}
+    "C:\\Users\\OHN\\Projects\\Server\\InMemoryRepository\\InMemoryRepository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\OHN\\Projects\\server\\Entities\\Entities.csproj": {
+    "C:\\Users\\OHN\\Projects\\Server\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OHN\\Projects\\server\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\OHN\\Projects\\Server\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\OHN\\Projects\\server\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\OHN\\Projects\\Server\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\OHN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OHN\\Projects\\server\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\OHN\\Projects\\Server\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OHN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -341,14 +341,14 @@
         }
       }
     },
-    "C:\\Users\\OHN\\Projects\\server\\InMemoryRepository\\InMemoryRepository.csproj": {
+    "C:\\Users\\OHN\\Projects\\Server\\InMemoryRepository\\InMemoryRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OHN\\Projects\\server\\InMemoryRepository\\InMemoryRepository.csproj",
+        "projectUniqueName": "C:\\Users\\OHN\\Projects\\Server\\InMemoryRepository\\InMemoryRepository.csproj",
         "projectName": "InMemoryRepository",
-        "projectPath": "C:\\Users\\OHN\\Projects\\server\\InMemoryRepository\\InMemoryRepository.csproj",
+        "projectPath": "C:\\Users\\OHN\\Projects\\Server\\InMemoryRepository\\InMemoryRepository.csproj",
         "packagesPath": "C:\\Users\\OHN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OHN\\Projects\\server\\InMemoryRepository\\obj\\",
+        "outputPath": "C:\\Users\\OHN\\Projects\\Server\\InMemoryRepository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OHN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -366,11 +366,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\OHN\\Projects\\server\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\OHN\\Projects\\server\\Entities\\Entities.csproj"
+              "C:\\Users\\OHN\\Projects\\Server\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\OHN\\Projects\\Server\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\OHN\\Projects\\server\\RepositoryContracts\\RepositoryContracts.csproj": {
-                "projectPath": "C:\\Users\\OHN\\Projects\\server\\RepositoryContracts\\RepositoryContracts.csproj"
+              "C:\\Users\\OHN\\Projects\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "C:\\Users\\OHN\\Projects\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
               }
             }
           }
@@ -685,14 +685,14 @@
         }
       }
     },
-    "C:\\Users\\OHN\\Projects\\server\\RepositoryContracts\\RepositoryContracts.csproj": {
+    "C:\\Users\\OHN\\Projects\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OHN\\Projects\\server\\RepositoryContracts\\RepositoryContracts.csproj",
+        "projectUniqueName": "C:\\Users\\OHN\\Projects\\Server\\RepositoryContracts\\RepositoryContracts.csproj",
         "projectName": "RepositoryContracts",
-        "projectPath": "C:\\Users\\OHN\\Projects\\server\\RepositoryContracts\\RepositoryContracts.csproj",
+        "projectPath": "C:\\Users\\OHN\\Projects\\Server\\RepositoryContracts\\RepositoryContracts.csproj",
         "packagesPath": "C:\\Users\\OHN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OHN\\Projects\\server\\RepositoryContracts\\obj\\",
+        "outputPath": "C:\\Users\\OHN\\Projects\\Server\\RepositoryContracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OHN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -710,8 +710,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\OHN\\Projects\\server\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\OHN\\Projects\\server\\Entities\\Entities.csproj"
+              "C:\\Users\\OHN\\Projects\\Server\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\OHN\\Projects\\Server\\Entities\\Entities.csproj"
               }
             }
           }

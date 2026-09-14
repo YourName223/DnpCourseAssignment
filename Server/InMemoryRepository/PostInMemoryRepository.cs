@@ -5,15 +5,31 @@ namespace InMemoryRepository;
 
 public class PostInMemoryRepository : IPostRepository
 {
-    private List<Post> posts{get; set;}
-
-    Task<Post> AddAsync(Post post)
+    private List<Post> posts = [];
+    public PostInMemoryRepository()
     {
-        post.Id = posts.Any<>?posts.Max(p=>p.id)+1:0;
-        posts.Add(post);
-        return Task.FromResult<>;
+        //Dummy data
+        AddAsync(new Post()
+        {
+            Title="A post",
+            Body="This is a fine post",
+            UserId = 0
+        });
+        AddAsync(new Post()
+        {
+            Title="A good post",
+            Body="This is a great post",
+            UserId = 1
+        });
     }
-    Task UpdateAsync(Post post)
+
+    public Task<Post> AddAsync(Post post)
+    {
+        post.Id = posts.Any()?posts.Max(p=>p.Id)+1:0;
+        posts.Add(post);
+        return Task.FromResult(post);
+    }
+    public Task UpdateAsync(Post post)
     {
         Post? existingPost = posts.SingleOrDefault(p => p.Id == post.Id); 
         
@@ -26,21 +42,21 @@ public class PostInMemoryRepository : IPostRepository
         posts.Add(post); 
         return Task.CompletedTask;
     }
-    Task DeleteAsync(Post post)
+    public Task DeleteAsync(Post post)
     {
-        Post? postToRemove = posts.SingleOrDefault(p => p.Id == id); 
+        Post? postToRemove = posts.SingleOrDefault(p => p.Id == post.Id); 
 
         if (postToRemove is null) 
         { 
-            throw new InvalidOperationException( $"Post with ID '{id}' not found"); 
+            throw new InvalidOperationException( $"Post with ID '{post.Id}' not found"); 
         } 
         
         posts.Remove(postToRemove); 
         return Task.CompletedTask;
     }
-    Task<Post> GetSingleAsync(int id)
+    public Task<Post> GetSingleAsync(int id)
     {
-        Post? post = posts.SingleOrDefault(p => p.id == id);
+        Post? post = posts.SingleOrDefault(p => p.Id == id);
 
         if (post is null) 
         { 
@@ -49,7 +65,7 @@ public class PostInMemoryRepository : IPostRepository
 
         return Task.FromResult(post);
     }
-    IQueryable<Post> GetManyAsync()
+    public IQueryable<Post> GetManyAsync()
     {
         return posts.AsQueryable();
     }

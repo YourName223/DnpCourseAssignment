@@ -8,13 +8,13 @@ C:\Users\OHN\Projects\Server\RepositoryContracts\bin\Debug\net10.0\Repository.dl
 C:\Users\OHN\Projects\Server\RepositoryContracts\bin\Debug\net10.0\Repository.pdb
 C:\Users\OHN\Projects\Server\RepositoryContracts\bin\Debug\net10.0\Entities.dll
 C:\Users\OHN\Projects\Server\RepositoryContracts\bin\Debug\net10.0\Entities.pdb
-C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\Repository.csproj.AssemblyReference.cache
+C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\RepositoryContracts.csproj.AssemblyReference.cache
 C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\Repository.AssemblyInfoInputs.cache
 C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\Repository.AssemblyInfo.cs
-C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\RepositoryContracts.csproj.CoreCompileInputs.cache
 C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\Repository.sourcelink.json
-C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\Repository.csproj.Up2Date
+C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\RepositoryContracts.csproj.Up2Date
 C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\Repository.dll
 C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\refint\Repository.dll
 C:\Users\OHN\Projects\Server\RepositoryContracts\obj\Debug\net10.0\Repository.pdb
