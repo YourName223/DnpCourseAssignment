@@ -12,6 +12,19 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "FileRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "RepositoryContracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FileRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileRepository.dll": {}
+        }
+      },
       "InMemoryRepository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -47,6 +60,11 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "FileRepository/1.0.0": {
+      "type": "project",
+      "path": "../FileRepository/FileRepository.csproj",
+      "msbuildProject": "../FileRepository/FileRepository.csproj"
+    },
     "InMemoryRepository/1.0.0": {
       "type": "project",
       "path": "../InMemoryRepository/InMemoryRepository.csproj",
@@ -60,7 +78,9 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "InMemoryRepository >= 1.0.0"
+      "FileRepository >= 1.0.0",
+      "InMemoryRepository >= 1.0.0",
+      "RepositoryContracts >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -91,8 +111,14 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
+            "C:\\Users\\OHN\\Projects\\Server\\FileRepository\\FileRepository.csproj": {
+              "projectPath": "C:\\Users\\OHN\\Projects\\Server\\FileRepository\\FileRepository.csproj"
+            },
             "C:\\Users\\OHN\\Projects\\Server\\InMemoryRepository\\InMemoryRepository.csproj": {
               "projectPath": "C:\\Users\\OHN\\Projects\\Server\\InMemoryRepository\\InMemoryRepository.csproj"
+            },
+            "C:\\Users\\OHN\\Projects\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
+              "projectPath": "C:\\Users\\OHN\\Projects\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
             }
           }
         }

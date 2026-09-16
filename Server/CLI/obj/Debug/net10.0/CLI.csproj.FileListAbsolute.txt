@@ -30,3 +30,8 @@ C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\Entities.pdb
 C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\InMemoryRepository.pdb
 C:\Users\OHN\Projects\Server\CLI\obj\Debug\net10.0\CLI.csproj.AssemblyReference.cache
 C:\Users\OHN\Projects\Server\CLI\obj\Debug\net10.0\CLI.csproj.Up2Date
+c:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\FileRepository.deps.json
+c:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\FileRepository.runtimeconfig.json
+c:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\FileRepository.exe
+c:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\FileRepository.dll
+c:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\FileRepository.pdb

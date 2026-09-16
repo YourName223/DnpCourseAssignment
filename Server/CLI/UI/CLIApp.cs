@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using CLI.UI.ManagePost;
 using CLI.UI.ManageUser;
 using RepositoryContracts;
@@ -10,14 +9,6 @@ public class CLIApp(IUserRepository userRepository, ICommentRepository commentRe
     public IUserRepository UserRepository { get; set; } = userRepository;
     public IPostRepository PostRepository { get; set; } = postRepository;
     public ICommentRepository CommentRepository { get; set; } = commentRepository;
-
-    private CreatePostView createPostView = new CreatePostView(postRepository);
-    private ListPostView listPostView = new ListPostView(postRepository);
-    private ManagePostsView managePostsView = new ManagePostsView(postRepository,commentRepository);
-    private SinglePostView singlePostView = new SinglePostView(postRepository,commentRepository);
-    private CreateUserView createUserView = new CreateUserView(userRepository);
-    private ListUsersView listUsers = new ListUsersView(userRepository);
-
     public async Task Start()
     {
         while (true)
@@ -27,22 +18,22 @@ public class CLIApp(IUserRepository userRepository, ICommentRepository commentRe
             switch (input)
             {
                 case "CP":
-                    await createPostView.Enter();
+                    await new CreatePostView(postRepository).Enter();
                     break;
                 case "LP":
-                    await listPostView.Enter();
+                    await new ListPostView(postRepository).Enter();
                     break;
                 case "AC":
-                    await managePostsView.Enter();
+                    await new ManagePostsView(postRepository, commentRepository).Enter();
                     break;
                 case "SP":
-                    await singlePostView.Enter();
+                    await new SinglePostView(postRepository, commentRepository).Enter();
                     break;
                 case "CU":
-                    await createUserView.Enter();
+                    await new CreateUserView(userRepository).Enter();
                     break;
                 case "LU":
-                    await listUsers.Enter();
+                    await new ListUsersView(userRepository).Enter();
                     break;
                 default:
                     Console.WriteLine("Input incorrect, try again");

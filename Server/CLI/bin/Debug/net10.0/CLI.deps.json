@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v10.0": {
       "CLI/1.0.0": {
         "dependencies": {
-          "InMemoryRepository": "1.0.0"
+          "FileRepository": "1.0.0",
+          "InMemoryRepository": "1.0.0",
+          "RepositoryContracts": "1.0.0"
         },
         "runtime": {
           "CLI.dll": {}
@@ -17,6 +19,17 @@
       "Entities/1.0.0": {
         "runtime": {
           "Entities.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "FileRepository/1.0.0": {
+        "dependencies": {
+          "RepositoryContracts": "1.0.0"
+        },
+        "runtime": {
+          "FileRepository.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -54,6 +67,11 @@
       "sha512": ""
     },
     "Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileRepository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

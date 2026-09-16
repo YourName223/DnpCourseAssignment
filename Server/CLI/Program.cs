@@ -1,11 +1,10 @@
 ﻿using CLI;
-using InMemoryRepository;
 using RepositoryContracts;
 
 Console.WriteLine("Starting CLI app...");
-IUserRepository userRepository = new UserInMemoryRepository();
-IPostRepository postRepository = new PostInMemoryRepository();
-ICommentRepository commentRepository = new CommentInMemoryRepository();
+IUserRepository userRepository = new UserFileRepository();
+IPostRepository postRepository = new PostFileRepository();
+ICommentRepository commentRepository = new CommentFileRepository();
 
 Console.WriteLine("test");
 
