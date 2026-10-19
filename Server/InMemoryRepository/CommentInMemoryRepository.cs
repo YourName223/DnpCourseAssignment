@@ -8,25 +8,6 @@ public class CommentInMemoryRepository : ICommentRepository
     private List<Comment> comments = [];
     public CommentInMemoryRepository()
     {
-        //Dummy data
-        AddAsync(new Comment()
-        {
-            Body="This is a comment",
-            PostId = 0,
-            UserId = 0
-        });
-        AddAsync(new Comment()
-        {
-            Body="This is another comment",
-            PostId = 1,
-            UserId = 1
-        });
-        AddAsync(new Comment()
-        {
-            Body="This is a alot of comments",
-            PostId = 0,
-            UserId = 1
-        });
     }
     public Task<Comment> AddAsync(Comment comment)
     {

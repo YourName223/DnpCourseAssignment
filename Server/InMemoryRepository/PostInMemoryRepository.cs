@@ -8,19 +8,6 @@ public class PostInMemoryRepository : IPostRepository
     private List<Post> posts = [];
     public PostInMemoryRepository()
     {
-        //Dummy data
-        AddAsync(new Post()
-        {
-            Title = "A post",
-            Body = "This is a fine post",
-            UserId = 0
-        });
-        AddAsync(new Post()
-        {
-            Title = "A good post",
-            Body = "This is a great post",
-            UserId = 1
-        });
     }
 
     public Task<Post> AddAsync(Post post)

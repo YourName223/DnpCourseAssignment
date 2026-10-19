@@ -8,17 +8,6 @@ public class UserInMemoryRepository : IUserRepository
     private List<User> users = [];
     public UserInMemoryRepository()
     {
-        //Dummy data
-        AddAsync(new User()
-        {
-            UserName="Oscar",
-            PassWord="12345"
-        });
-        AddAsync(new User()
-        {
-            UserName="BedreOscar",
-            PassWord="12345678"
-        });
     }
     public Task<User> AddAsync(User user)
     {

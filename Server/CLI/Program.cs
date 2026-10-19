@@ -1,10 +1,12 @@
 ﻿using CLI;
 using RepositoryContracts;
+using FileRepository;
 
 Console.WriteLine("Starting CLI app...");
 IUserRepository userRepository = new UserFileRepository();
 IPostRepository postRepository = new PostFileRepository();
 ICommentRepository commentRepository = new CommentFileRepository();
+
 
 Console.WriteLine("test");
 

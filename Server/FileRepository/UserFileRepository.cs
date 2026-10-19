@@ -2,6 +2,8 @@ using RepositoryContracts;
 using Entities;
 using System.Text.Json;
 
+namespace FileRepository;
+
 public class UserFileRepository : IUserRepository
 {
     private readonly string filePath = "user.json";

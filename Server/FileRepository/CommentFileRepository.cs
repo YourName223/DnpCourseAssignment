@@ -2,6 +2,8 @@ using RepositoryContracts;
 using Entities;
 using System.Text.Json;
 
+namespace FileRepository;
+
 public class CommentFileRepository : ICommentRepository
 {
     private readonly string filePath = "comment.json";
@@ -12,6 +14,8 @@ public class CommentFileRepository : ICommentRepository
         {
             File.WriteAllText(filePath, "[]");
         }
+
+        Console.WriteLine("test");
     }
 
     public async Task<Comment> AddAsync(Comment comment)
