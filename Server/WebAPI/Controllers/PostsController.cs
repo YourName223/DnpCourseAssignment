@@ -9,10 +9,12 @@ using RepositoryContracts;
 public class PostsController : ControllerBase
 {
     private readonly IPostRepository postRepo;
+    private readonly ICommentRepository commentRepo;
 
-    public PostsController(IPostRepository postRepo)
+    public PostsController(IPostRepository postRepo, ICommentRepository commentRepo)
     {
         this.postRepo = postRepo;
+        this.commentRepo = commentRepo;
     }
 
     [HttpPost]
@@ -20,11 +22,11 @@ public class PostsController : ControllerBase
         [FromBody] CreatePostDto requst,
         [FromServices] IUserRepository userRepo)
     {
-        Post post = new(requst.Title,requst.Body,requst.AuthorUserId);
+        Post post = new(requst.Title, requst.Body, requst.AuthorUserId);
 
         Post created = await postRepo.AddAsync(post);
 
-        return Results.Created($"/posts/{created.Id}",created);
+        return Results.Created($"/posts/{created.Id}", created);
     }
 
     [HttpPatch("{id:int}")]
@@ -46,8 +48,16 @@ public class PostsController : ControllerBase
     public async Task<IResult> GetPost([FromRoute] int id)
     {
         Post post = await postRepo.GetSingleAsync(id);
+        List<CommentDto> commentDtos = commentRepo.GetManyAsync()
+        .Where(c => c.PostId == post.Id)
+        .Select(c => new CommentDto
+        (
+            c.Body,
+            c.UserId,
+            c.PostId
+        )).ToList();
 
-        GetPostDto dto = new GetPostDto(post.Title,post.Body,post.UserId);
+        GetPostDto dto = new GetPostDto { Id = post.Id, Title = post.Title, Body = post.Body, UserId = post.UserId, CommentDtos = commentDtos };
 
         return Results.Ok(dto);
     }
@@ -59,19 +69,19 @@ public class PostsController : ControllerBase
     {
         IQueryable posts;
 
-        if(titleContains is not null)
+        if (titleContains is not null)
         {
             posts = postRepo.GetManyAsync().Where(p => p.Title.Contains(titleContains));
         }
-        else if(userId is not null)
+        else if (userId is not null)
         {
             posts = postRepo.GetManyAsync().Where(p => p.UserId == userId);
         }
         else
         {
-            return Results.BadRequest();
+            posts = postRepo.GetManyAsync();
         }
-        
+
 
         return Results.Ok(posts);
     }

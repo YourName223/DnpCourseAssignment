@@ -19,15 +19,10 @@ C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\Entities.deps.json
 C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\Entities.runtimeconfig.json
 C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\Entities.exe
 C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\RepositoryContracts.exe
-C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\InMemoryRepository.deps.json
-C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\InMemoryRepository.runtimeconfig.json
-C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\InMemoryRepository.exe
 C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\Entities.dll
-C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\InMemoryRepository.dll
 C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\RepositoryContracts.dll
 C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\RepositoryContracts.pdb
 C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\Entities.pdb
-C:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\InMemoryRepository.pdb
 C:\Users\OHN\Projects\Server\CLI\obj\Debug\net10.0\CLI.csproj.AssemblyReference.cache
 C:\Users\OHN\Projects\Server\CLI\obj\Debug\net10.0\CLI.csproj.Up2Date
 c:\Users\OHN\Projects\Server\CLI\bin\Debug\net10.0\FileRepository.deps.json

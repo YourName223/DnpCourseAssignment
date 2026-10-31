@@ -1,0 +1,33 @@
+@page "/Login"
+
+@using DTOs
+@inject IAuthService AuthService
+@inject NavigationManager Navigation
+<PageTitle>Log in</PageTitle>
+
+<div>
+    <input type="text" placeholder="Enter your username" @bind="username"/>
+    <input type="text" placeholder="Enter your password" @bind="password"/>
+    <button @onclick="() => LoginRequest()">Log in</button>
+</div>
+
+@code
+{
+    private string? username;
+    private string? password;
+
+    private async void LoginRequest()
+    {
+        if(username == null || password == null)
+        {
+            return;
+        }
+        await AuthService.LoginAsync(new UserLoginDto{Username = username,Password = password});
+        int? userId = await AuthService.GetUserIdAsync();
+        if(userId == null)
+        {
+            return;
+        }
+        Navigation.NavigateTo($"/users/{userId.Value}/posts");
+    }
+}

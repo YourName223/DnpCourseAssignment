@@ -1,0 +1,37 @@
+@page "/Signup"
+@using DTOs
+
+@inject IUserService UserService
+
+@inject IAuthService AuthService
+@inject NavigationManager Navigation
+
+<PageTitle>Sign up</PageTitle>
+
+<div>
+    <input type="text" placeholder="Enter your username" @bind="username"/>
+    <input type="text" placeholder="Enter your password" @bind="password"/>
+    <button @onclick="() => SignupRequest()">Sign up</button>
+</div>
+
+@code
+{
+    private string? username;
+    private string? password;
+
+    private async void SignupRequest()
+    {
+        if(username == null || password == null)
+        {
+            return;
+        }
+        UserDto user = await UserService.AddUserAsync(new CreateUserDto{Username = username, Password = password});
+        await AuthService.LoginAsync(new UserLoginDto{Username = username,Password = password});
+        int? userId = await AuthService.GetUserIdAsync();
+        if(userId == null)
+        {
+            return;
+        }
+        Navigation.NavigateTo($"/users/{userId.Value}/posts");
+    }
+}

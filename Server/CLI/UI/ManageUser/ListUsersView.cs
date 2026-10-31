@@ -22,7 +22,7 @@ public class ListUsersView
         Console.WriteLine("All users in the system:");
         foreach (User user in userRepository.GetManyAsync())
         {
-            Console.WriteLine($"user: {user.UserName} \n {user.Id}");
+            Console.WriteLine($"user: {user.Username} \n {user.Id}");
         }
     }
 }

@@ -31,6 +31,7 @@ public class CreatePostView
 
     private async Task CreatePostAsync(string title, string body, int userId)
     {
+        /*
         Post post = new Post()
         {
             Title=title,
@@ -41,5 +42,6 @@ public class CreatePostView
         Post created = await postRepository.AddAsync(post);
 
         Console.WriteLine($"Post with the body: {created.Body} is created");
+        */
     }
 }

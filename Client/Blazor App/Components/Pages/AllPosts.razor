@@ -1,0 +1,70 @@
+﻿@page "/allPosts"
+@using DTOs
+@inject IPostService PostService
+
+@inject NavigationManager Navigation
+@inject IAuthService AuthService
+@rendermode InteractiveServer
+
+<PageTitle>All Posts</PageTitle>
+
+<h1>Posts</h1>
+
+@if (posts is null)
+{
+    <p>Loading posts...</p>
+}
+else if (posts.Count == 0)
+{
+    <p>No posts found</p>
+}
+else
+{
+    <div>
+        @foreach (PostDto post in posts)
+        {
+            <div>
+                <button @onclick="() => ViewPost(post)">@post.Title</button>
+            </div>
+        }   
+    </div>
+}
+
+<div>
+    <input type="text" placeholder="Enter post title" @bind="postTitle"/>
+    <input type="text" placeholder="Enter post body" @bind="postBody"/>
+    <button @onclick="() => AddPost()">Add Post</button>
+</div>
+
+
+@code {
+    private List<PostDto>? posts;
+    
+    private String? postTitle;
+    private String? postBody;
+
+    protected override async Task OnInitializedAsync()
+    {
+        posts = await PostService.getAllPostsAsync();
+    }
+
+    private void ViewPost(PostDto post)
+    {
+        Navigation.NavigateTo($"/posts/{post.Id}");
+    }
+
+    private async Task AddPost()
+    {
+        if(postTitle != null && postBody != null)
+        {
+            int? userId = await AuthService.GetUserIdAsync();
+            if(userId == null)
+            {
+                return;
+            }
+
+            await PostService.AddPostAsync(new CreatePostDto(postTitle,postBody,userId.Value));
+        }
+        Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+    }
+}

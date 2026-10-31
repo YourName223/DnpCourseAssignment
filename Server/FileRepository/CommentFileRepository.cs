@@ -14,8 +14,6 @@ public class CommentFileRepository : ICommentRepository
         {
             File.WriteAllText(filePath, "[]");
         }
-
-        Console.WriteLine("test");
     }
 
     public async Task<Comment> AddAsync(Comment comment)

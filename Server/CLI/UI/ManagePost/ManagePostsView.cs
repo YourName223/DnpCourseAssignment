@@ -38,6 +38,7 @@ public class ManagePostsView
 
     public async Task AddComment(string body, int userId, int postId)
     {
+        /*
         Comment comment = new Comment()
         {
             Body = body,
@@ -48,5 +49,7 @@ public class ManagePostsView
         Comment created = await commentRepository.AddAsync(comment);
 
         Console.WriteLine($"Comment with the body: {created.Body} is created");
+        */
+        
     }
 }

@@ -1,0 +1,50 @@
+﻿@inject IAuthService AuthService
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Blazor App</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="nav flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="allPosts">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> All Posts
+            </NavLink>
+        </div>
+
+        @if (loaded && userId != null)
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="@($"/Users/{userId.Value}/Posts")">
+                    <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> YourPosts
+                </NavLink>
+            </div>
+        }
+    </nav>
+</div>
+
+@code {
+    private int? userId;
+    private bool loaded;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            userId = await AuthService.GetUserIdAsync();
+            loaded = true;
+
+            StateHasChanged();
+        }
+    }
+}

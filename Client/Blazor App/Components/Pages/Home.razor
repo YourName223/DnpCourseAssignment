@@ -1,0 +1,31 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Identity.Data
+@using Microsoft.AspNetCore.Components.Authorization
+
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<AuthorizeView>
+    <Authorized>
+        <PageTitle>Well hello there</PageTitle>
+    </Authorized>
+    <NotAuthorized>
+        <PageTitle>Log in</PageTitle>
+
+        <button @onclick="() => LoginRequest()">Log in</button>
+        <button @onclick="() => SignupRequest()">Sign up</button>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code
+{
+    private void LoginRequest()
+    {
+        Navigation.NavigateTo($"/Login");
+    }
+
+    private void SignupRequest()
+    {
+        Navigation.NavigateTo($"/Signup");
+    }
+}

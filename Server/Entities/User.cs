@@ -1,14 +1,24 @@
 namespace Entities;
 
+using System.Text.Json.Serialization;
+
 public class User
 {
-    public string UserName{get; set; }
-    public string PassWord{get; set; }
+    public string Username{get; set; }
+    public string Password{get; set; }
     public int Id{get; set; }
 
-    public User(string UserName, string PassWord)
+    [JsonConstructor]
+    public User(string Username, string Password)
     {
-        this.UserName = UserName;
-        this.PassWord = PassWord;
+        this.Username = Username;
+        this.Password = Password;
+    }
+
+    public User(string Username, string Password, int Id)
+    {
+        this.Username = Username;
+        this.Password = Password;
+        this.Id = Id;
     }
 }

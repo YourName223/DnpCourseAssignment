@@ -1,0 +1,71 @@
+@page "/posts/{Id:int}"
+@using DTOs
+@inject IPostService PostService
+@inject ICommentService CommentService
+@inject IAuthService AuthService
+@inject IUserService UserService
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+
+<PageTitle>Posts</PageTitle>
+
+@if (post is null)
+{
+    <p>Loading posts... / no post found</p>
+}
+else
+{
+    <div>
+        <h2>@post.Title</h2>
+        <p>@postAuther</p>
+        <p>@post.Body</p>
+        @if (post.CommentDtos is null || !post.CommentDtos.Any())
+        {
+            <p>No comments yet.</p>    
+        }
+        else
+        {
+            @foreach(CommentDto comment in post.CommentDtos)
+            {  
+                <p>
+                    @comment.Body
+                </p>
+            }
+        }
+        <input type="text" placeholder="Enter comment" @bind="commentText"/>
+        <button @onclick="() => AddComment()">Add Comment</button>
+    </div>
+}
+
+
+@code {
+    [Parameter]
+    public int Id { get; set;}
+
+    public String? commentText;
+
+    public PostDto? post;
+    public String? postAuther;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        post = await PostService.GetPostAsync(new GetPostDto { Id= Id });
+        UserDto userDto = await UserService.getUserAsync(post.UserId);
+        postAuther = userDto.Username;
+    }
+    private async Task AddComment()
+    {
+        if(commentText == null)
+        {
+            return;
+        }
+        int? userId = await AuthService.GetUserIdAsync();
+        if(userId == null)
+        {
+            return;
+        }
+        await CommentService.AddCommentAsync(new CreateCommentDto(commentText,userId.Value,Id));
+        Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+    }
+}

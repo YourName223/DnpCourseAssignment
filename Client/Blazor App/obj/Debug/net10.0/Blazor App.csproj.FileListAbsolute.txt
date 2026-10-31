@@ -1,0 +1,95 @@
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\appsettings.json
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Blazor_App.staticwebassets.runtime.json
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Blazor_App.staticwebassets.endpoints.json
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Blazor_App.exe
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Blazor_App.deps.json
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Blazor_App.runtimeconfig.json
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Blazor_App.dll
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Blazor_App.pdb
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\EmbeddedAttribute.cs
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\ValidatableTypeAttribute.cs
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\Blazor App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\Blazor App.AssemblyInfoInputs.cache
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\Blazor App.AssemblyInfo.cs
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\Blazor App.csproj.CoreCompileInputs.cache
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\Blazor_App.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\Blazor App.sourcelink.json
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\scopedcss\Components\Layout\ReconnectModal.razor.rz.scp.css
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\scopedcss\bundle\Blazor_App.styles.css
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\scopedcss\projectbundle\Blazor_App.bundle.scp.css
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\iknjkrykak-{0}-khy4lop6wu-khy4lop6wu.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\frfkjypkfc-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\8dq8xcrubk-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\ur56fm4sot-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\dl1p65ztfk-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\xmia34av0g-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\aqipo3f66n-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\sgi5zp56y3-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\px9o2j3tj6-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\j97s894rma-{0}-ub07r2b239-ub07r2b239.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\oqkw6myall-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\98c1f4q57u-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\uk4jmgfo67-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\ifskvlvf0y-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\usv8eo7qtm-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\4hjcxia6vt-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\pj5ua1z4mj-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\siaiqww2nz-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\yhgsy0takp-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\xx3eq04gql-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\bn3p4gkjqt-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\kha6n71tn2-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\9vjv6q6vmu-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\393t7rdjfa-{0}-06098lyss8-06098lyss8.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\1ep79hqxcx-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\9l9gusv7mt-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\96dmttzuwg-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\1hxeusts8r-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\merh799k3f-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\m3h8nulnfp-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\i1mbqek919-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\00azxytgjy-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\k5m0nrvqrk-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\fbxdtun3h2-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\pmtqi70e0x-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\7ojq5nhxdp-{0}-493y06b0oq-493y06b0oq.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\r5dpsrenj0-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\kfbph98w3a-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\secpsqtp3e-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\kj5v0lss8g-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\8cwlkpg903-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\14i2unq1q7-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\tbxdi07xpk-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\brsbypw3s7-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\eooqtln2pt-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\mh83zn33pv-{0}-abdmv1u4y3-abdmv1u4y3.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\huv3fy5il3-{0}-wyu7y4jcvb-wyu7y4jcvb.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\whvcefi9dd-{0}-wfr2hj6447-wfr2hj6447.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\uhfdypizzd-{0}-sks47jzfe0-sks47jzfe0.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\compressed\mqt3mqpj2y-{0}-sks47jzfe0-sks47jzfe0.gz
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\Blazor_App.dll
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\refint\Blazor_App.dll
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\Blazor_App.pdb
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\Blazor App.genruntimeconfig.cache
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\ref\Blazor_App.dll
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\ApiContracts.dll
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\ApiContracts.pdb
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\Blazor App.csproj.AssemblyReference.cache
+C:\Users\OHN\Projects\Client\Blazor App\obj\Debug\net10.0\Blazor App.csproj.Up2Date
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\OHN\Projects\Client\Blazor App\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll

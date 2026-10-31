@@ -8,7 +8,5 @@ IPostRepository postRepository = new PostFileRepository();
 ICommentRepository commentRepository = new CommentFileRepository();
 
 
-Console.WriteLine("test");
-
 CLIApp cliApp = new CLIApp(userRepository, commentRepository, postRepository);
 await cliApp.Start();
