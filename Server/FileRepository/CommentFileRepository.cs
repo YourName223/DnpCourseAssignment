@@ -41,11 +41,11 @@ public class CommentFileRepository : ICommentRepository
         commentsAsJson = JsonSerializer.Serialize(comments);
         await File.WriteAllTextAsync(filePath, commentsAsJson);
     }
-    public async Task DeleteAsync(Comment comment)
+    public async Task DeleteAsync(int id)
     {
         string commentsAsJson = await File.ReadAllTextAsync(filePath);
         List<Comment> comments = JsonSerializer.Deserialize<List<Comment>>(commentsAsJson) !;
-        int index = comments.FindIndex(c => c.Id == comment.Id);
+        int index = comments.FindIndex(c => c.Id == id);
         if(index == -1)
         {
             return;

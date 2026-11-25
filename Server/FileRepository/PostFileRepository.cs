@@ -39,11 +39,11 @@ public class PostFileRepository : IPostRepository
         postsAsJson = JsonSerializer.Serialize(posts);
         await File.WriteAllTextAsync(filePath, postsAsJson);
     }
-    public async Task DeleteAsync(Post post)
+    public async Task DeleteAsync(int id)
     {
         string postsAsJson = await File.ReadAllTextAsync(filePath);
         List<Post> posts = JsonSerializer.Deserialize<List<Post>>(postsAsJson)!;
-        int index = posts.FindIndex(c => c.Id == post.Id);
+        int index = posts.FindIndex(c => c.Id == id);
         if (index == -1)
         {
             return;

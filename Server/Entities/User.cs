@@ -8,6 +8,10 @@ public class User
     public string Password{get; set; }
     public int Id{get; set; }
 
+    public List<Post> Posts {get; set; } = [];
+
+    public List<Comment> Comments {get; set; } = [];
+
     [JsonConstructor]
     public User(string Username, string Password)
     {
@@ -15,10 +19,5 @@ public class User
         this.Password = Password;
     }
 
-    public User(string Username, string Password, int Id)
-    {
-        this.Username = Username;
-        this.Password = Password;
-        this.Id = Id;
-    }
+    private User(){}
 }

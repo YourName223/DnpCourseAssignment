@@ -3,6 +3,7 @@ using Entities;
 using DTOs;
 using Microsoft.AspNetCore.Mvc;
 using RepositoryContracts;
+using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("[controller]")]
@@ -21,8 +22,8 @@ public class PostsController : ControllerBase
     public async Task<IResult> AddPost(
         [FromBody] CreatePostDto requst,
         [FromServices] IUserRepository userRepo)
-    {
-        Post post = new(requst.Title, requst.Body, requst.AuthorUserId);
+    {    
+        Post post = new Post(requst.Title, requst.Body, requst.AuthorUserId);
 
         Post created = await postRepo.AddAsync(post);
 
@@ -48,14 +49,14 @@ public class PostsController : ControllerBase
     public async Task<IResult> GetPost([FromRoute] int id)
     {
         Post post = await postRepo.GetSingleAsync(id);
-        List<CommentDto> commentDtos = commentRepo.GetManyAsync()
+        List<CommentDto> commentDtos = await commentRepo.GetManyAsync()
         .Where(c => c.PostId == post.Id)
         .Select(c => new CommentDto
         (
             c.Body,
             c.UserId,
             c.PostId
-        )).ToList();
+        )).ToListAsync();
 
         GetPostDto dto = new GetPostDto { Id = post.Id, Title = post.Title, Body = post.Body, UserId = post.UserId, CommentDtos = commentDtos };
 

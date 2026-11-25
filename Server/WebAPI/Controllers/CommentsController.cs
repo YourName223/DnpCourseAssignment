@@ -20,6 +20,8 @@ public class CommentsController : ControllerBase
         [FromBody] CreateCommentDto requst,
         [FromServices] ICommentRepository commentRepo)
     {
+        
+        //Test, broken, needs to find user/post instead of using id
         Comment comment = new(requst.Body,requst.UserId,requst.PostId);
 
         Comment created = await commentRepo.AddAsync(comment);

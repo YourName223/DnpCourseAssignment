@@ -39,11 +39,11 @@ public class UserFileRepository : IUserRepository
         userAsJson = JsonSerializer.Serialize(users);
         await File.WriteAllTextAsync(filePath, userAsJson);
     }
-    public async Task DeleteAsync(User user)
+    public async Task DeleteAsync(int id)
     {
         string userAsJson = await File.ReadAllTextAsync(filePath);
         List<User> users = JsonSerializer.Deserialize<List<User>>(userAsJson)!;
-        int index = users.FindIndex(c => c.Id == user.Id);
+        int index = users.FindIndex(c => c.Id == id);
         if (index == -1)
         {
             return;
